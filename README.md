@@ -50,17 +50,17 @@ To Create Reports you just have to click on the relevant data field and select a
 
 <p align="center">
 Report showing total count by Signature:<br/>
-<img src="https://i.imgur.com/zk5ghI6.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/zk5ghI6.png" height="80%" width="80%" alt="totalcountsig"/>
 
 <br />
 <p align="center">
 Report showing Severity:<br/>
-<img src="https://i.imgur.com/4kSnNTw.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/4kSnNTw.png" height="80%" width="80%" alt="severity"/>
 
 <br />
 <p align="center">
 Report Comparing Success and Failure of Windows Activity:<br/>
-<img src="https://i.imgur.com/Ldj6vyX.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/Ldj6vyX.png" height="80%" width="80%" alt="compare"/>
 
 <br />
 
@@ -68,132 +68,85 @@ Report Comparing Success and Failure of Windows Activity:<br/>
 
 Using information from my reports I was able to determine an average baseline and threshold for hourly level of failed Windows activity, for the hourly count of the signature "an account was successfully logged on.", and for the hourly count of the signature "a user account was deleted".
 
-6. How To create alert after establishing baseline activity:
+To find the baseline I took the total amount of events for each data field and divided by the 24 hour range observed on the Windows server logs. To create an alert threshold for abnormal event activity I doubled this value.
+
+6. How To create alert after establishing baseline & threshold:
    - On results page select "Save As" at the top right
    - Create a title and Description, then set permissions, alert type(scheduled or real time) and frequency.
    - Select the trigger condition and frequency for specific alert
-(Ex: for each alert I selected "number of results" and set the value to anything greater than 10 percent more than the average baseline value, and had alert sent to the SOC team of VSI)
+(Ex: for each alert I selected "number of results" and set the value to anything greater than double the average baseline value, and had alert sent to the SOC team of VSI)
 
 <br />
 <p align="center">
 Alert creation:<br/>
-<img src="https://i.imgur.com/UebLKbh.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/UebLKbh.png" height="80%" width="80%" alt="alertcreation"/>
 
 <br />
 <p align="center">
 Alert for excessive failed login activity:<br/>
-<img src="https://i.imgur.com/8F7PodM.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/8F7PodM.png" height="80%" width="80%" alt="failedlogin"/>
 
 <br />
 <p align="center">
 Alert for excessive login successful activity:<br/>
-<img src="https://i.imgur.com/LSCjRQR.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/LSCjRQR.png" height="80%" width="80%" alt="successfullogin"/>
 
 <br />
 <p align="center">
 Alert for excessive deleted User Accounts:<br/>
-<img src="https://i.imgur.com/Zm7FwB7.png" height="80%" width="80%" alt="SSH"/>
+<img src="https://i.imgur.com/Zm7FwB7.png" height="80%" width="80%" alt="deleteduser"/>
 
 <br />
 
+7. Next I wanted to create a dashboard of visualizations that would be able to easily display data found in the in the Windows sever log. Dashboards are a great demonstrative tool to show others relavent info. After navigating back to the original search field, I proceeded to make visualizations of the previous mentioned data fields.
+<br />
+<p align="center">
+Visualization displaying the different "signature" field valures over time:<br/>
+<img src="https://i.imgur.com/ZklVwB1.png" height="80%" width="80%" alt="signature"/>
 
--Subscription/Resource Group: Select the Resource group that was created is Step 1.
+<br />
 
--Name: Whichever name you create will be the name for the Web app I decided on "Davidcyberblog"
+8. After creating visulization Click "Save AS" and then "New Dashboard". You'll be able to name and save dashboard. To add more graphs to the dashboard, navigate back to search field, select relavent data field and create visualization and then save each to the newly created dashboard.
 
--Publish: Select "Code."
+<br />
+<p align="center">
+Dashboard showing created Visualizations:<br/>
+<img src="https://i.imgur.com/m0Wrg4s.png" height="80%" width="80%" alt="dashboard1"/>
 
--Runtime Stack: Select "PHP 8.2"
+<br />
+<p align="center">
+Dashboard showing created Visualizations:<br/>
+<img src="https://i.imgur.com/0nCwysV.png" height="80%" width="80%" alt="dashboard2"/>
 
--Operating System: Select "Linux."
+<br />
 
--Region: Select the same region that was used for the resource group.
+9. Next I navigated back to the Splunk Enterprise home page to set a new source, however this time I loaded VSI's Apache logs. And proceeded to analyze the data fields "method", "referer_domain", "status", "clientip", and "useragent". <br />
 
-<br/>
+10. This analysis helped me create reports, discover basline "normal" activity, create alerts, design visualizations and build a dashboard showing the Apache server data.
+
+<br />
+<p align="center">
+Visualization showing HTTP Requests by Method:<br/>
+<img src="https://i.imgur.com/H62hNmn.png" height="80%" width="80%" alt="requestbymethod"/>
+
+<br />
 
 <p align="center">
-The following image shows the completed "Basics" tab: <br/>
-<img src="https://i.imgur.com/tk6Y9il.png" height="80%" width="80%" alt="SSH"/>
+Visualization showing Top 10 Domains:<br/>
+<img src="https://i.imgur.com/BcPTV6E.png" height="80%" width="80%" alt="topdomains"/>
 
 <br />
-<br />
-
-
-6. Normally this step is where you would create your App Service Plan by:
-
-
--Under "Linux Plan," select "Create New" and then enter any name for your project plan
-
--Under "Sku and size," select "Change size."
-
--The spec picker will pop up on the right-hand side of your screen.
-(This allows you to choose the pricing structure of your web app.)
-
--Select "Dev/Test" and "Plan B1" (the green option), and then click "Apply," 
-
-(In my example I selected the completely free tier so I could not customize these options, the more you are willing to pay the more space and bandwidth will be allowed for your application)
-
-
 <p align="center">
-Example: <br/>
-<img src="https://i.imgur.com/agGvXUv.png" height="80%" width="80%" alt="SSH"/>
+Dashboard showing created Visualizations:<br/>
+<img src="https://i.imgur.com/idNmZWY.png" height="80%" width="80%" alt="dashboard3"/>
 
 <br />
-<br />
-
-
-7. You can leave all other options is other tabs as default. Select the "Review + Create" tab.
-
-
 <p align="center">
-<br/>
-<img src="https://i.imgur.com/tk6Y9il.png" height="80%" width="80%" alt="SSH"/>
+Dashboard showing created Visualizations:<br/>
+<img src="https://i.imgur.com/UnksBbL.png" height="80%" width="80%" alt="dashboard4"/>
 
 <br />
 <br />
-
-8. Select "Create" at the bottom
-   
-<p align="center">
-<br/>
-<img src="https://i.imgur.com/ydowDy9.png" height="80%" width="80%" alt="SSH"/>
-
-<br />
-<br />
-
-
-9. Once App has been created and deployed you will be able to find it by clicking "Go to Resource" , or searching "App Services" in the Azure search field.
-Application Page: <br/>
-<img src="https://i.imgur.com/HHsWStq.png" height="80%" width="80%" alt="SSH"/>
-
-<br />
-<br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--
