@@ -64,10 +64,23 @@ Report Comparing Success and Failure of Windows Activity:<br/>
 
 <br />
 
+5. In order to create alerts for abnormal activity we need to make baseline of normal activity.
 
+Using information from my reports I was able to determine an average baseline and threshold for hourly level of failed Windows activity, for the hourly count of the signature "an account was successfully logged on.", and for the hourly count of the signature "a user account was deleted".
 
+6. How To create alert after establishing baseline activity:
+   - On results page select "Save As" at the top right
+   - Create a title and Description, then set permissions, alert type(scheduled or real time) and frequency.
+   - Select the trigger condition and frequency for specific alert
+(Ex: for each alert I selected "number of results" and set the value to anything greater than 10 percent more than the average baseline value, and had alert sent to the SOC team of VSI)
 
-5. In the "Basics" tab select the following:
+<br />
+<p align="center">
+Alert creation:<br/>
+<img src="https://i.imgur.com/UebLKbh.png" height="80%" width="80%" alt="SSH"/>
+
+<br />
+
 
 -Subscription/Resource Group: Select the Resource group that was created is Step 1.
 
