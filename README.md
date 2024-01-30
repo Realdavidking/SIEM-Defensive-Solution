@@ -40,6 +40,7 @@ Selecting Log File: <br/>
 - You'll get brought to the "Set Source" page, change any configurations as necessary then select "Next"
 - In the "Host" field value on the "Input Settings" page update the value to the log file's name and select "Review"
 - Verify your chosen settings and select "Submit" to upload data.
+- Click "Start Searching" and log data will populate. Organized in different fields (Time frame of data can be selected for analysis of events in a specific time period).
 
 3. Navigate to Azure search field and search and select "App Services"
 
