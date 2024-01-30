@@ -101,7 +101,7 @@ Alert for excessive deleted User Accounts:<br/>
 7. Next I wanted to create a dashboard of visualizations that would be able to easily display data found in the in the Windows sever log. Dashboards are a great demonstrative tool to show others relavent info. After navigating back to the original search field, I proceeded to make visualizations of the previous mentioned data fields.
 <br />
 <p align="center">
-Visualization displaying the different "signature" field valures over time:<br/>
+Visualization displaying the different "signature" field values over time:<br/>
 <img src="https://i.imgur.com/ZklVwB1.png" height="80%" width="80%" alt="signature"/>
 
 <br />
