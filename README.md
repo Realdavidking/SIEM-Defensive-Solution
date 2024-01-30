@@ -124,6 +124,8 @@ Dashboard showing created Visualizations:<br/>
 
 10. This analysis helped me create reports, discover basline "normal" activity, create alerts, design visualizations and build a dashboard showing the Apache server data.
 
+To find baseline activity I took total events and divided by the 84 hour range observed on the Apache server logs. To create an alert threshold for abnormal event activity I doubled this value.
+
 <br />
 <p align="center">
 Visualization showing HTTP Requests by Method:<br/>
