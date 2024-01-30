@@ -42,24 +42,26 @@ Selecting Log File: <br/>
 - Verify your chosen settings and select "Submit" to upload data.
 - Click "Start Searching" and log data will populate. Organized in different fields (Time frame of data can be selected for analysis of events in a specific time period).
 
-3. Navigate to Azure search field and search and select "App Services"
+3. After I uploaded the Windows server log, I proceeded to analyze the information. The main fields i was interested in were: "Signature_id", "Signature", "User", "Status" and "Severity"
+
+4. Next step was to design reports for those fields.
+
+To Create Reports you just have to click on the relevant data field and select an appropriate Visualization for the data you are viewing, and then click the "Save As" option to save report specific to the data field.
 
 <p align="center">
-<br/>
-<img src="https://i.imgur.com/LuhCcg6.png" height="80%" width="80%" alt="appservices"/>
+Report showing total count by Signature:<br/>
+<img src="https://i.imgur.com/zk5ghI6.png" height="80%" width="80%" alt="SSH"/>
 
 <br />
-<br />
-
-
-
-4. Select "+ create" to start creation of Application
-
 <p align="center">
- <br/>
-<img src="https://i.imgur.com/ZkYUp8I.png" height="80%" width="80%" alt="SSH"/>
+Report showing Severity:<br/>
+<img src="https://i.imgur.com/4kSnNTw.png" height="80%" width="80%" alt="SSH"/>
 
 <br />
+<p align="center">
+Report Comparing Success and Failure of Windows Activity:<br/>
+<img src="https://i.imgur.com/Ldj6vyX.png" height="80%" width="80%" alt="SSH"/>
+
 <br />
 
 
