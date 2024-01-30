@@ -150,6 +150,11 @@ Dashboard showing created Visualizations:<br/>
 <br />
 <br />
 
+<h2>Power Point of Full Project:</h2>
+
+ - [Defensive Security Project](https://docs.google.com/presentation/d/1W7klSMICfboVGIU3IaH_fH1n4Jcv3apkfU_Q64Ixh8E/edit?usp=sharing)
+   
+
 
 <!--
  ```diff
