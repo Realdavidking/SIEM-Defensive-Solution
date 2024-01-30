@@ -22,19 +22,24 @@ This Project will demonstrate the steps on how to analyze log information from a
 
 <h2>Project Guide:</h2>  
 
-1. Initally I
+1. Initally I started a splunk container that was on my Virtual Machine and signed into Splunk Enterprise online.
 
+2. In order to create a baseline for "regular" user activity it is necessary to upload log into Splunk after sigining in.
 
-
-2. You have to establish a Resource Group, this step is necessary as the web application requires a subscription service to be deployed. 
+How to Upload log data:
+- Select the option “Or get data in with the following methods.”
+- Select "Upload"
+- Click "Select File" and navigate to wherever you have log file saved on system.
 
 <p align="center">
-Creating Resource Group: <br/>
-<img src="https://i.imgur.com/YJ8gaVh.png" height="80%" width="80%" alt="Create a Resource"/>
+Selecting Log File: <br/>
+<img src="https://i.imgur.com/PihyKiI.png" height="80%" width="80%" alt="Log Upload"/>
 
 <br />
-<br />
 
+- You'll get brought to the "Set Source" page, change any configurations as necessary then select "Next"
+- In the "Host" field value on the "Input Settings" page update the value to the log file's name and select "Review"
+- Verify your chosen settings and select "Submit" to upload data.
 
 3. Navigate to Azure search field and search and select "App Services"
 
