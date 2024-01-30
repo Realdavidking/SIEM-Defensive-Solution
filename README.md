@@ -80,6 +80,21 @@ Alert creation:<br/>
 <img src="https://i.imgur.com/UebLKbh.png" height="80%" width="80%" alt="SSH"/>
 
 <br />
+<p align="center">
+Alert for excessive failed login activity:<br/>
+<img src="https://i.imgur.com/8F7PodM.png" height="80%" width="80%" alt="SSH"/>
+
+<br />
+<p align="center">
+Alert for excessive login successful activity:<br/>
+<img src="https://i.imgur.com/LSCjRQR.png" height="80%" width="80%" alt="SSH"/>
+
+<br />
+<p align="center">
+Alert for excessive deleted User Accounts:<br/>
+<img src="https://i.imgur.com/Zm7FwB7.png" height="80%" width="80%" alt="SSH"/>
+
+<br />
 
 
 -Subscription/Resource Group: Select the Resource group that was created is Step 1.
