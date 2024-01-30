@@ -106,7 +106,7 @@ Visualization displaying the different "signature" field values over time:<br/>
 
 <br />
 
-8. After creating visulization Click "Save AS" and then "New Dashboard". You'll be able to name and save dashboard. To add more graphs to the dashboard, navigate back to search field, select relavent data field and create visualization and then save each to the newly created dashboard.
+8. After creating visualization Click "Save AS" and then "New Dashboard". You'll be able to name and save dashboard. To add more graphs to the dashboard, navigate back to search field, select relavent data field and create visualization and then save each to the newly created dashboard.
 
 <br />
 <p align="center">
