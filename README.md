@@ -7,7 +7,7 @@
 <br />
 <br />
 <h2>Description</h2>
-This Project will demonstrate the steps on how to analyze log information from a fictious company's (Virtual Space Industry) Windows & Apache servers utilizing a SIEM (Splunk Enterprise). Then I will use that analysis to establish a baseline for user activity, create relavent alerts, reports and dashboards in order to notify VSI's SOC team of abnormal user activity which could be an indicator of a malicious actor.
+This Project will demonstrate the steps on how to analyze log information from a fictious company's (Virtual Space Industry) Windows & Apache servers utilizing a SIEM (Splunk Enterprise). VSI has heard a rumor that a competitor may launch attacks to disrupt VSI's business. After I analyze past logs, I'll use my analysis to establish a baseline for user activity, create relavent alerts, reports and dashboards in order to notify VSI's SOC team of abnormal user activity which could be an indicator of a malicious actor.
 
 <h2>Languages and Utilities Used</h2>
 
@@ -22,7 +22,7 @@ This Project will demonstrate the steps on how to analyze log information from a
 
 <h2>Project Guide:</h2>  
 
-1. Sign up for an account on Microsoft Azure portal.azure.com
+1. Initally I
 
 
 
