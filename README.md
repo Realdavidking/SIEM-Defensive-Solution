@@ -1,8 +1,8 @@
 # SIEM-Defensive-Solution
 
 <p align="center">
-Splunk: <br/>
-<img src="https://imgur.com/QaKqeg0.png" height="80%" width="80%" alt="Create a Resource"/>
+<br/>
+<img src="https://imgur.com/QaKqeg0.png" height="80%" width="80%" alt="Splunk"/>
 
 <br />
 <br />
